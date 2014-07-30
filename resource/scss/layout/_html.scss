@@ -1,24 +1,47 @@
 html {
-    header {
+    body {
 
-    }
+        &.test {
 
-    nav {
+            div {
+                display: inline-block;
+                vertical-align: top;
+                width: 300px;
+                height: 300px;
+                background: #5a3a3a;
 
-    }
+                &:first-child {
+                    background: #3e42e4;
+                }
 
-    main {
-        .breadcrumbs {
+                &:last-child {
+                    float: right;
+                    background: green;
+                }
+            }
+        }
+
+        header {
 
         }
 
-        section {
-            display: inline-block;
-            vertical-align: top;
+        nav {
+
         }
-    }
 
-    footer {
+        main {
+            .breadcrumbs {
 
+            }
+
+            section {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        footer {
+
+        }
     }
 }

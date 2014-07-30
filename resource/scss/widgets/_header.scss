@@ -1,24 +1,41 @@
 header {
-	background: red;
-	color: red;
-	font-size: 14px;
+	ul {
+     //@todo delete after view
 
-	a {
-		color: red;
+        li {
+            margin-left: 300px;
 
-		&.class {
-			color:green;
-		}
+            a {
+                &.phone {
+                    position: relative;
 
-		&:hover {
-			color: blue;
-		}
-	}
+                    &:hover {
+                        color: #33ee44;
 
-	.beer {
-		&.obolon {
-			font-size: 12px;
-			@include box-sizing(border-box);
-		}
-	}
+                        &::after {
+                            background-image: url("../images/badge_sale.png");
+                        }
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: 'Zelos';
+                        top: 4px;
+                        right: -15px;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        top: 4px;
+                        left: -15px;
+                        width: 10px;
+                        height: 10px;
+                        content: '';
+                        background-image: url("../images/badge_hit.png");
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
 }
