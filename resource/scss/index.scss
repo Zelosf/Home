@@ -1,4 +1,14 @@
 @import "compass/reset";
 @import "compass/css3";
 
-@import "header"
+@import "base";
+
+@import "components/input";
+@import "components/button";
+
+@import "widgets/header";
+@import "widgets/nav";
+@import "widgets/breadcrumbs";
+@import "widgets/footer";
+
+@import "layout/html";
