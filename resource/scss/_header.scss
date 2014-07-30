@@ -1,0 +1,24 @@
+header {
+	background: red;
+	color: red;
+	font-size: 14px;
+
+	a {
+		color: red;
+
+		&.class {
+			color:green;
+		}
+
+		&:hover {
+			color: blue;
+		}
+	}
+
+	.beer {
+		&.obolon {
+			font-size: 12px;
+			@include box-sizing(border-box);
+		}
+	}
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Практика 1</title>
+			<style>
+				header {
+					display: block;
+					height: 200px;
+					width: 100%; /*ширина */
+				}
+					.PingvinBig{
+						float: left;
+						margin: 0px 0px;
+					}
+
+					.Zagolovok{
+						overflow: hidden;
+						float: left;
+						margin: 50px 10px;
+					}
+					.TriStroki{
+						overflow: hidden;
+						float: right;
+						padding-top: 50px;
+					}
+				table {
+					display: block;
+					margin: 10px 0;
+					width: 100%; /* Ширина */
+					vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+					padding: 0px; /* Поля в ячейках */
+					
+				}
+
+					.col1 { width: 40%; }
+  					.col2 { width: 40%; }
+					.col3 { width: 20%; }
+					.col1:hover { /* Псевдо класс для подсвечивания ячейки */
+					background: #0080FF;}
+					.col2:hover { /* Псевдо класс для подсвечивания ячейки */
+					background: #0080FF;}
+				footer{
+					display: block;
+					width: 100%; /* Ширина */
+					overflow:hidden;
+				}
+				.first{border-left: 2px solid #000;
+					margin-right: 4px;
+					padding:0px 5px; 
+				}
+				body{
+					display: block;
+					width: 99%; /* Какого черта тут при 100 процентах некоректно отображается*/
+					height: 1px; /* При 100: некоректного отображается а при пикселях гуд???*/
+				}
+				.Centr1 {width: 20%;
+				vertical-align: top;
+				text-align: left;
+				}
+				.Centr1 select {width: 100%;} 
+				.Centr2 {vertical-align: top;}
+				.Centr3 {width: 20%; vertical-align: top;} 		
+				.Checkbox {width: 100%;text-align: left;vertical-align: top;}
+				.Knopki {width: 100%;text-align: right;}
+				
+
+    			.shadow 
+    			{box-shadow: 2px 2px 0px;}
+
+
+				.Kroshki li{
+					position: relative;
+					left: -50px; /* Положение от левого края */
+					padding:0px 5px;
+					display: inline-block;
+				}
+				.Kroshki li a{
+					border-right: 1px solid #fff; /*Для создания разделителя в "хлебных крошках"*/
+					padding:0px 5px; 
+					border-radius:0px 20px 20px 0;
+					box-shadow:4px 1px 1px -2px rgba(0,0,0,0.8)
+
+				}
+
+
+			</style>
+</head>
+<body>
+	<header>
+		<table border="0" width="100%">
+			<th>
+				<div class="PingvinBig">
+					<img src="http://yoursmileys.ru/hsmile/penguin/h1213.png"  alt="А Пингвин!"  width="200px" height="200px" border="2">
+				</div>
+				<div class="Zagolovok">
+					<h1>А Пингвин!</h1>
+				</div>
+			</th>
+			<th>
+				<div class="TriStroki">
+				<h3> <img src="http://yoursmileys.ru/hsmile/penguin/h1213.png" alt="А Пингвин!" width="20" height="20" border="1"> 1 слово</h3>
+				<h3> <img src="http://yoursmileys.ru/hsmile/penguin/h1213.png" alt="А Пингвин!" width="20" height="20" border="1"> 2 слово</h3>
+				<h3> <img src="http://yoursmileys.ru/hsmile/penguin/h1213.png" alt="А Пингвин!" width="20" height="20" border="1"> 3 слово</h3>
+				</div>
+			</th>
+		</table>
+	</header><!-- /header -->
+	
+	<table border="2" >
+		<th class="col1">One</th>
+		<th class="col2">Two</th>
+		<th class="col3">search<input type="search" name="search" placeholder="search" ></th>
+	</table>
+
+	<ul class="Kroshki">
+		<li><a href="#1" float: left;>Home</a></li>
+		<li><a href="#2">Products</a></li>
+		<li><a href="#3">Xyz</a></li>
+		<li>Features</li><!-- не уверен -->
+	</ul>
+
+	<table border="0" height="100%">
+		<th class="centr1">
+			<select name="ComboBox" >
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<input type="radio" name="Option1" value="O1" checked="cheked">Option1<br>
+			<input type="radio" name="Option2" value="O2">Option2<br>
+			<input type="radio" name="Option3" value="O3" disabled>Option3<br>
+		</th>
+
+		<th class="centr2">
+			<img src="http://bm.img.com.ua/nxs/img/prikol/images/large/5/1/288215.jpg" alt="OMG">
+			
+		</th>
+		<th class="centr3">
+			<table border="0" width="100%" height="99%">
+				<tr class="Checkbox">
+					<th height="99%">
+					<input type="checkbox" name="Option1" value="O1" >Option1<br>
+					<input type="checkbox" name="Option2" value="O2" checked="cheked">Option2<br>
+					<input type="checkbox" name="Option3" value="O3" disabled>Option3<br>
+					</th>
+				</tr>
+				<tr class="Knopki">
+					<th>
+					<input type="reset" name="Cancel" value="Cancel">
+					<!--<input type="Button" name="Cancel" value="Cancel">-->
+					<!--<input type="Button" name="Ok" value="Ok">-->
+					<input type="submit" name="Ok" value="Ok">
+					</th>
+				</tr>
+			
+			</table>
+		</th>
+	</table>
+
+	<footer>
+		<table border="2">
+			<th  height="100">
+				<ul>
+					<a href="#">Home</a></li>
+					<a class="first" href="#"> Products</a></li>
+					<a class="first" href="#"> Company</a></li>
+					<a class="first" href="#"> Blog</a></li>
+				</ul>
+			</th>
+		</table>
+	</footer>
+</body>
+</html>
