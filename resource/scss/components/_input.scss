@@ -1,5 +1,20 @@
 input[type="text"] {
     &.search {
-
+    	background: url(http://img.womtec.ru/google-chrome-plugins/8.jpg) no-repeat scroll;
+    	background-size: 10%;
+    	border: 1px solid;
+    	padding: 2px 2px 2px 2px;
     }
+}
+main{
+	section.left{
+		ul{
+			li{
+				input[type="text"]{
+					min-width: 99%;
+					min-height: 18px;
+				}
+			}
+		}
+	}
 }

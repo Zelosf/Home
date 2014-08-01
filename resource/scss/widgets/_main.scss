@@ -1,0 +1,56 @@
+html{
+	min-height: 100%;
+	body{
+		main{
+			position: relative;
+			width: 100%;
+
+			.breadcrumbs{
+				ul{
+					li{
+						display: inline;
+					}
+											
+		//			a:after{
+		//				content:  ">" ;
+		//			}				
+				}
+			}
+			section.left{
+				position: absolute;
+				width: 20%;
+				ul{
+					li{
+						select{
+							min-width: 100%;
+							min-height: 24px;
+						}
+					}
+				}
+
+
+			}
+			section.top{
+				position: absolute;
+				left: 40%;
+				width: 60%;
+				vertical-align: top;
+
+			}
+			section.right{
+				ul.checkbox{
+					position: absolute;
+					width: 20%;
+					right: 0px;					
+					text-align: left;
+				}
+			//	.button{
+			//		position: relative;
+			//		bottom: 100px;
+			//		right: 10px;
+			//	}
+
+			}
+		}
+	}
+}

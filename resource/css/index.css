@@ -63,39 +63,141 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 1, ../scss/_base.scss */
-a {
-  color: red;
+/* line 2, ../scss/components/_input.scss */
+input[type="text"].search {
+  background: url(http://img.womtec.ru/google-chrome-plugins/8.jpg) no-repeat scroll;
+  background-size: 10%;
+  border: 1px solid;
+  padding: 2px 2px 2px 2px;
+}
+
+/* line 13, ../scss/components/_input.scss */
+main section.left ul li input[type="text"] {
+  min-width: 99%;
+  min-height: 18px;
+}
+
+/* line 1, ../scss/components/_button.scss */
+.button {
+  position: absolute;
+  top: 200px;
+  right: 10px;
 }
 
 /* line 1, ../scss/widgets/_header.scss */
-header {
-  background: red;
-  color: red;
-  font-size: 14px;
+body {
+  position: relative;
+  min-height: 100%;
 }
-/* line 6, ../scss/widgets/_header.scss */
-header a {
-  color: red;
+/* line 4, ../scss/widgets/_header.scss */
+body header {
+  position: relative;
+  min-height: 100px;
+  width: 100%;
 }
-/* line 9, ../scss/widgets/_header.scss */
-header a.class {
-  color: green;
+/* line 8, ../scss/widgets/_header.scss */
+body header h1 {
+  position: absolute;
+  left: 110px;
+  top: 45px;
 }
-/* line 13, ../scss/widgets/_header.scss */
-header a:hover {
-  color: blue;
+/* line 14, ../scss/widgets/_header.scss */
+body header .logo img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
 }
-/* line 19, ../scss/widgets/_header.scss */
-header .beer.obolon {
-  font-size: 12px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 21, ../scss/widgets/_header.scss */
+body header ul {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  text-align: right;
 }
 
-/* line 15, ../scss/layout/_html.scss */
-html main section {
-  display: inline-block;
+/* line 1, ../scss/widgets/_nav.scss */
+nav {
+  position: relative;
+  border: 2px solid;
+  padding: 10px 30px 10px;
+  width: 96.1%;
+}
+/* line 8, ../scss/widgets/_nav.scss */
+nav ul li {
+  display: inline;
+}
+
+/* line 1, ../scss/widgets/_main.scss */
+html {
+  min-height: 100%;
+}
+/* line 4, ../scss/widgets/_main.scss */
+html body main {
+  position: relative;
+  width: 100%;
+}
+/* line 10, ../scss/widgets/_main.scss */
+html body main .breadcrumbs ul li {
+  display: inline;
+}
+/* line 19, ../scss/widgets/_main.scss */
+html body main section.left {
+  position: absolute;
+  width: 20%;
+}
+/* line 24, ../scss/widgets/_main.scss */
+html body main section.left ul li select {
+  min-width: 100%;
+  min-height: 24px;
+}
+/* line 33, ../scss/widgets/_main.scss */
+html body main section.top {
+  position: absolute;
+  left: 40%;
+  width: 60%;
   vertical-align: top;
+}
+/* line 41, ../scss/widgets/_main.scss */
+html body main section.right ul.checkbox {
+  position: absolute;
+  width: 20%;
+  right: 0px;
+  text-align: left;
+}
+
+/* line 1, ../scss/widgets/_footer.scss */
+footer {
+  position: absolute;
+  width: 99.9%;
+  top: 100%;
+  margin-top: -80px;
+}
+/* line 7, ../scss/widgets/_footer.scss */
+footer ul {
+  position: relative;
+  text-align: center;
+  border: 1px solid;
+  padding: 27px 0px 0px;
+  height: 50px;
+}
+/* line 14, ../scss/widgets/_footer.scss */
+footer ul li {
+  display: inline;
+}
+
+/* line 1, ../scss/layout/_html.scss */
+html {
+  height: 100%;
+}
+/* line 3, ../scss/layout/_html.scss */
+html body {
+  height: 100%;
+}
+/* line 8, ../scss/layout/_html.scss */
+html header {
+  height: 100px;
+}
+/* line 27, ../scss/layout/_html.scss */
+html footer {
+  height: 50px;
 }

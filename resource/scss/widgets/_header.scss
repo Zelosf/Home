@@ -1,41 +1,28 @@
-header {
-	ul {
-     //@todo delete after view
-
-        li {
-            margin-left: 300px;
-
-            a {
-                &.phone {
-                    position: relative;
-
-                    &:hover {
-                        color: #33ee44;
-
-                        &::after {
-                            background-image: url("../images/badge_sale.png");
-                        }
-                    }
-
-                    &::before {
-                        position: absolute;
-                        content: 'Zelos';
-                        top: 4px;
-                        right: -15px;
-                    }
-
-                    &::after {
-                        position: absolute;
-                        top: 4px;
-                        left: -15px;
-                        width: 10px;
-                        height: 10px;
-                        content: '';
-                        background-image: url("../images/badge_hit.png");
-                        background-size: contain;
-                    }
-                }
-            }
-        }
+body {
+	position: relative;
+	min-height: 100%;
+	header {
+		position: relative;
+		min-height: 100px;
+		width: 100%;
+		h1{
+			position: absolute;
+			left: 110px;
+			top: 45px;
+		}
+    	.logo{
+    		img{
+    		position: absolute;
+    	//	border: 1px solid;
+    		height: 100px;
+    		width: 100px;
+    		}
+    	}
+    	ul{
+    		position: absolute;
+    		right: 5px;
+    		top: 25px;
+    		text-align: right;
+    	}
     }
 }
