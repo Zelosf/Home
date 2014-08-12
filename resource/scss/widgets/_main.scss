@@ -1,56 +1,56 @@
-html{
-	min-height: 100%;
-	body{
-		main{
-			position: relative;
-			width: 100%;
+main{
+	display: inline-block;
+	min-width: 100%;
 
-			.breadcrumbs{
-				ul{
-					li{
-						display: inline;
-					}
+	.breadcrumbs{
+				
+		ul{
+			li{
+				display: inline-block;
+			}
 											
-		//			a:after{
-		//				content:  ">" ;
-		//			}				
-				}
+			li:after{
+				content:  " >" ;
 			}
-			section.left{
-				position: absolute;
-				width: 20%;
-				ul{
-					li{
-						select{
-							min-width: 100%;
-							min-height: 24px;
-						}
-					}
-				}
-
-
-			}
-			section.top{
-				position: absolute;
-				left: 40%;
-				width: 60%;
-				vertical-align: top;
-
-			}
-			section.right{
-				ul.checkbox{
-					position: absolute;
-					width: 20%;
-					right: 0px;					
-					text-align: left;
-				}
-			//	.button{
-			//		position: relative;
-			//		bottom: 100px;
-			//		right: 10px;
-			//	}
-
-			}
+			li:last-child:after{
+				content: "";
+			}				
 		}
 	}
+	section.left{
+		display: inline-block;
+		width: 20%;
+		vertical-align: top;
+				
+		ul{
+			li{
+				select{
+					min-width: 90%;
+					min-height: 24px;
+				}
+				input[type="text"]{
+					width: 90%;
+					height: 18px;
+				}
+			}
+		}
+				
+				
+
+
+	}
+	section.top{
+		display: inline-block;
+		text-align: center;
+		width: 59%;
+		vertical-align: top;
+
+	}
+	section.right{
+		display: inline-block;
+		right: 0;
+		width: 20%;
+		vertical-align: top;
+		margin-right: 0;
+		}
 }

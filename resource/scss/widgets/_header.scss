@@ -1,28 +1,36 @@
-body {
-	position: relative;
-	min-height: 100%;
-	header {
-		position: relative;
-		min-height: 100px;
-		width: 100%;
-		h1{
-			position: absolute;
-			left: 110px;
-			top: 45px;
-		}
-    	.logo{
-    		img{
-    		position: absolute;
-    	//	border: 1px solid;
-    		height: 100px;
-    		width: 100px;
-    		}
-    	}
-    	ul{
-    		position: absolute;
-    		right: 5px;
-    		top: 25px;
-    		text-align: right;
-    	}
+header {
+    
+    min-height: 100px;
+    width: 100%;
+       
+    .logo{
+        float: left;
+        
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+	.Name{
+        
+        float: left;
+        height: 100px;
+        vertical-align: top;
+        h1{
+            margin-top: 45px;
+        }
+
+	}
+
+    ul{
+        
+        vertical-align: top;
+        height: 100px;
+        margin-right: 10px;
+    	text-align: left;
+        float:right;
+        line-height: 35px;
+        
     }
 }
